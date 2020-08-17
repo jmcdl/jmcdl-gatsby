@@ -1,10 +1,10 @@
 import React from "react"
 import { createUseStyles } from "react-jss"
-import { headerStyle } from "../jss/components/headerStyle"
+import { navbarStyle } from "../jss/components/navbarStyle"
 
-const useStyles = createUseStyles(headerStyle)
+const useStyles = createUseStyles(navbarStyle)
 
-export default function Header() {
+export default function Navbar() {
   const classes = useStyles()
   return (
     <nav className={classes.navbar}>

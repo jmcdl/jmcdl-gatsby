@@ -1,17 +1,18 @@
 import React from "react"
-import PropTypes from "prop-types"
 import "normalize.css"
 import { ThemeProvider } from "react-jss"
 
-import Header from "../components/header"
+import Navbar from "../components/navbar"
 import Content from "../components/content"
 import Footer from "../components/footer"
 import theme from "../jss/theme"
+import SEO from "../components/seo"
 
 export default function Resume() {
   return (
     <ThemeProvider theme={theme}>
-      <Header />
+      <SEO />
+      <Navbar />
       <Content />
       <Footer />
     </ThemeProvider>

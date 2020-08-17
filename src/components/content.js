@@ -1,20 +1,19 @@
 import React from 'react'
 import { createUseStyles } from "react-jss"
+import Heading from "./content/heading"
 
 const useStyles = createUseStyles((theme) => ({
-  navbar: {
-    color: theme.white,
-    backgroundColor: theme.black,
-    width: '100%',
-  },
+  contentContainer: {
+    ...theme.contentContainer,
+  }
 }))
 
 export default function Content() {
   const classes = useStyles();
 
   return (
-    <div>
-      <h1>Hello</h1>
+    <div className={classes.contentContainer}>
+      <Heading title="James McDonell" />
     </div>
   )
 }

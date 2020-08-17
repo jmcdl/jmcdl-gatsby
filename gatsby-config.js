@@ -5,8 +5,10 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins: [{
-      resolve: 'gatsby-plugin-better-jss',
-    }],
+  siteMetadata: {
+    title: `James McDonell`,
+    description: `James McDonell's CV`,
+    author: `James McDonell`,
+  },
+  plugins: ["gatsby-plugin-better-jss", "gatsby-plugin-react-helmet"],
 }

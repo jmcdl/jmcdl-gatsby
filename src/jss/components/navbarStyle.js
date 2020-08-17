@@ -1,4 +1,4 @@
-const headerStyle = theme => ({
+const navbarStyle = theme => ({
   navbar: {
     color: theme.colors.white,
     backgroundColor: theme.colors.black,
@@ -50,4 +50,4 @@ const headerStyle = theme => ({
   },
 })
 
-export { headerStyle };
+export { navbarStyle };
