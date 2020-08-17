@@ -1,9 +1,10 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "jmcdl.com",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "James McDonell's digital CV",
   "version": "0.1.0",
-  "license": "0BSD",
+  "author": "James McDonell",
+  "license": "CC-BY-ND-4.0",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -14,18 +15,19 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "gatsby": "^2.24.41",
+    "gatsby": "^2.24.42",
+    "gatsby-plugin-better-jss": "^1.0.3",
+    "jss-preset-default": "^10.4.0",
+    "prop-types": "^15.7.2",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-jss": "^10.4.0"
   },
   "devDependencies": {
     "prettier": "2.0.5"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/jmcdl/jmcdl-gatsby"
   }
 }

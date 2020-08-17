@@ -67,3 +67,12 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+.idea/.gitignore
+.idea/codeStyles/
+.idea/inspectionProfiles/
+.idea/jmcdl-gatsby.iml
+.idea/misc.xml
+.idea/modules.xml
+.idea/prettier.xml
+.idea/vcs.xml
+src/utils/

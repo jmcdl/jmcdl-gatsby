@@ -1,5 +1,6 @@
 import React from "react"
+import Resume from "./resume"
 
-export default function Home() {
-  return <div>Hello world!</div>
+export default function App() {
+  return <Resume />
 }
