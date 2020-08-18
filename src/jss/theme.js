@@ -1,13 +1,13 @@
-const primaryHighlight = "#24A3CC";
-const secondaryHighlight = "#fa8072";
+const primaryHighlightColor = "#24A3CC";
+const secondaryHighlightColor = "#fa8072";
 const white = "#FFF";
 const black = "#111";
 const textDark = "#222"
 
 const theme = {
   colors: {
-    primaryColor: primaryHighlight,
-    secondaryColor: secondaryHighlight,
+    primaryHighlightColor: primaryHighlightColor,
+    secondaryHighlightColor: secondaryHighlightColor,
     white: white,
     black: black,
   },
@@ -29,12 +29,12 @@ const theme = {
       bottom: "0.2em",
       width: '100%',
       height: '2px',
-      background: primaryHighlight,
+      background: primaryHighlightColor,
       zIndex: "-1",
     },
     '&:hover': {
       '&:before': {
-        background: secondaryHighlight,
+        background: secondaryHighlightColor,
       },
     },
   },
@@ -46,7 +46,8 @@ const theme = {
   },
   breakpoints: {
     largeScreen: "@media (min-width: 1024px)",
-    smallScreen: "@media (min-width: 768px)",
+    tabletScreen: "@media (min-width: 768px)",
+    smallScreen: "@media (min-width: 640px)",
   },
 }
 

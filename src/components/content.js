@@ -13,7 +13,7 @@ export default function Content() {
 
   return (
     <div className={classes.contentContainer}>
-      <Heading title="James McDonell" />
+      <Heading title="James McDonell" subtitle="Full Stack Web Developer"/>
     </div>
   )
 }

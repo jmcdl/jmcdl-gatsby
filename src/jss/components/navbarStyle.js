@@ -5,7 +5,7 @@ const navbarStyle = theme => ({
     textTransform: "uppercase",
     ...theme.fontBase,
     lineHeight: "3rem",
-    fontSize: "12px",
+    fontSize: "11px",
     letterSpacing: "0.1rem",
   },
   navbarContent: {

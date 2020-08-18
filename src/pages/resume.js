@@ -11,7 +11,7 @@ import SEO from "../components/seo"
 export default function Resume() {
   return (
     <ThemeProvider theme={theme}>
-      <SEO />
+      <SEO title="James McDonell's Résumé"/>
       <Navbar />
       <Content />
       <Footer />

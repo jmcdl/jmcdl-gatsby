@@ -10,6 +10,7 @@ export default function Heading(props) {
     <div className={classes.titleContainer}>
       <div className={classes.titleColumn}>
         <h1 className={classes.titleText}>{props.title}</h1>
+        <h2 className={classes.subtitleText}>{props.subtitle}</h2>
       </div>
       <ul className={classes.infoColumn}>
         <li>Adelaide, SA</li>
