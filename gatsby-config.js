@@ -13,13 +13,13 @@ module.exports = {
   plugins: [
     "gatsby-plugin-better-jss",
     "gatsby-plugin-react-helmet",
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `markdown-pages`,
-        path: `${__dirname}/src/markdown-pages`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `markdown-pages`,
+    //     path: `${__dirname}/src/markdown-pages`,
+    //   },
+    // },
     `gatsby-transformer-remark`,
   ],
 }
