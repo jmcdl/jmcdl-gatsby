@@ -233,7 +233,7 @@ function ExperienceSection() {
             >
               R
             </a>
-            programming language to produce visualisations that were used to
+            {" "}programming language to produce visualisations that were used to
             better target credit card marketing.
           </li>
           <li>
