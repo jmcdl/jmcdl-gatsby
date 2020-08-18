@@ -9,7 +9,7 @@ function SkillsSection() {
   const classes = useStyles()
 
   return (
-    <SectionBase title="Profile">
+    <SectionBase title="Skills">
       <ul className={classes.sectionList}>
         <li>
           Writing performant{" "}
