@@ -1,13 +1,13 @@
-const HeadingStyle = theme => ({
+const HeadingStyles = theme => ({
   titleContainer: {
     marginTop: 64,
-    marginBottom: 32,
     width: 250,
     display: "flex",
     flexDirection: "column",
     [theme.breakpoints.smallScreen]: {
       flexDirection: "row",
       width: "100%",
+      marginBottom: 32,
     },
   },
   titleColumn: {
@@ -44,10 +44,10 @@ const HeadingStyle = theme => ({
     textTransform: "uppercase",
     display: "flex",
     flexWrap: "wrap",
-    textShadow: `4px 4px 0 ${theme.colors.primaryHighlightColor}`,
+    textShadow: `4px 4px 0 ${theme.colors.primary}`,
     transition: "text-shadow .2s ease-in-out",
     '&:hover': {
-      textShadow: `-4px -4px 0 ${theme.colors.secondaryHighlightColor}`,
+      textShadow: `-4px -4px 0 ${theme.colors.secondary}`,
     },
     [theme.breakpoints.tabletScreen]: {
       fontSize: 58,
@@ -58,10 +58,10 @@ const HeadingStyle = theme => ({
   },
 
   subtitleText: {
-    fontSize: 18,
+    fontSize: 16,
     borderTop: "4px solid",
     fontFamily: "Lato, 'Open Sans', Helvetica, Arial",
-    fontWeight: 400,
+    fontWeight: 300,
     color: theme.black,
     letterSpacing: "0.1rem",
     marginTop: 16,
@@ -72,6 +72,7 @@ const HeadingStyle = theme => ({
     [theme.breakpoints.tabletScreen]: {
       borderTop: "6px solid",
       fontSize: 26,
+      fontWeight: 400,
     },
     [theme.breakpoints.largeScreen]: {
       fontSize: 32,
@@ -84,4 +85,4 @@ const HeadingStyle = theme => ({
   }
 })
 
-export { HeadingStyle }
+export { HeadingStyles }

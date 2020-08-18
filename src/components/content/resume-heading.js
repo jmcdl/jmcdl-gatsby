@@ -1,10 +1,11 @@
 import React from "react"
+import PropTypes from "prop-types"
 import { createUseStyles } from "react-jss"
-import { HeadingStyle } from "../../jss/components/content/headingStyle"
+import { HeadingStyles } from "../../jss/components/content/heading-styles"
 
-const useStyles = createUseStyles(HeadingStyle)
+const useStyles = createUseStyles(HeadingStyles)
 
-export default function Heading(props) {
+function ResumeHeading(props) {
   const classes = useStyles()
   return (
     <div className={classes.titleContainer}>
@@ -19,6 +20,7 @@ export default function Heading(props) {
             className={classes.listItemLink}
             href="http://www.jmcdl.com/"
             target="_blank"
+            rel="noopener noreferrer"
           >
             www.jmcdl.com
           </a>
@@ -28,6 +30,7 @@ export default function Heading(props) {
             className={classes.listItemLink}
             href="mailto:james.mcdonell@outlook.com"
             target="_blank"
+            rel="noopener noreferrer"
           >
             james.mcdonell@outlook.com
           </a>
@@ -36,3 +39,9 @@ export default function Heading(props) {
     </div>
   )
 }
+ResumeHeading.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string.isRequired
+}
+
+export default ResumeHeading;

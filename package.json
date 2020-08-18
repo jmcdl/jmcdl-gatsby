@@ -18,6 +18,8 @@
     "gatsby": "^2.24.42",
     "gatsby-plugin-better-jss": "^1.0.3",
     "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby-source-filesystem": "^2.3.24",
+    "gatsby-transformer-remark": "^2.8.28",
     "jss-preset-default": "^10.4.0",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",

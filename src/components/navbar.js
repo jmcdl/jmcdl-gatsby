@@ -1,8 +1,8 @@
 import React from "react"
 import { createUseStyles } from "react-jss"
-import { navbarStyle } from "../jss/components/navbarStyle"
+import { navbarStyles } from "../jss/components/navbar-styles"
 
-const useStyles = createUseStyles(navbarStyle)
+const useStyles = createUseStyles(navbarStyles)
 
 export default function Navbar() {
   const classes = useStyles()
@@ -15,6 +15,7 @@ export default function Navbar() {
               className={classes.navButtonLink}
               href="https://www.linkedin.com/in/james-mcdonell-7bab8049/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               LinkedIn
             </a>
@@ -24,23 +25,25 @@ export default function Navbar() {
               className={classes.navButtonLink}
               href="https://github.com/jmcdl/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Github
             </a>
           </li>
         </ul>
-        <ul className={classes.downloadButton}>
-          <li>
-            <a
-              className={classes.downloadButtonLink}
-              href="https://www.jmcdl.com/cv.pdf"
-              target="_blank"
-            >
-              Download
-              <span>(pdf)</span>
-            </a>
-          </li>
-        </ul>
+        {/*<ul className={classes.downloadButton}>*/}
+        {/*  <li>*/}
+        {/*    <a*/}
+        {/*      className={classes.downloadButtonLink}*/}
+        {/*      href="https://www.jmcdl.com/cv.pdf"*/}
+        {/*      target="_blank"*/}
+        {/*      rel="noopener noreferrer"*/}
+        {/*    >*/}
+        {/*      Download*/}
+        {/*      <span>(pdf)</span>*/}
+        {/*    </a>*/}
+        {/*  </li>*/}
+        {/*</ul>*/}
       </div>
     </nav>
   )

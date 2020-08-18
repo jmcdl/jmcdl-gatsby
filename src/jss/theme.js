@@ -1,20 +1,25 @@
-const primaryHighlightColor = "#24A3CC";
-const secondaryHighlightColor = "#fa8072";
-const white = "#FFF";
-const black = "#111";
+const primary = "#74E2FF"
+const primaryDark = "#24A3CC"
+const secondary = "#fa8072"
+const white = "#FFF"
+const black = "#111"
 const textDark = "#222"
+const gray = "#DDD"
 
 const theme = {
   colors: {
-    primaryHighlightColor: primaryHighlightColor,
-    secondaryHighlightColor: secondaryHighlightColor,
+    primary: primary,
+    primaryDark: primaryDark,
+    secondary: secondary,
     white: white,
     black: black,
+    textDark: textDark,
+    gray: gray,
   },
   fontBase: {
     fontFamily: "Lato, Helvetica, Arial, sans-serif",
-    fontSize: "12px",
-    fontWeight: "300",
+    fontSize: 16,
+    fontWeight: 300,
     lineHeight: "1.5em",
     color: textDark,
   },
@@ -23,24 +28,24 @@ const theme = {
     color: textDark,
     position: "relative",
     display: "inline-block",
-    '&:before': {
+    "&:before": {
       content: '""',
-      position: 'absolute',
+      position: "absolute",
       bottom: "0.2em",
-      width: '100%',
-      height: '2px',
-      background: primaryHighlightColor,
+      width: "100%",
+      height: 2,
+      background: primary,
       zIndex: "-1",
     },
-    '&:hover': {
-      '&:before': {
-        background: secondaryHighlightColor,
+    "&:hover": {
+      "&:before": {
+        background: secondary,
       },
     },
   },
   contentContainer: {
     width: "80%",
-    maxWidth: "900px",
+    maxWidth: 900,
     marginLeft: "auto",
     marginRight: "auto",
   },

@@ -1,4 +1,4 @@
-const navbarStyle = theme => ({
+const navbarStyles = theme => ({
   navbar: {
     color: theme.colors.white,
     backgroundColor: theme.colors.black,
@@ -27,20 +27,20 @@ const navbarStyle = theme => ({
     padding: "0 0.8rem",
     color: theme.colors.white,
     "&:hover": {
-      color: theme.colors.primaryHighlightColor,
+      color: theme.colors.primary,
     },
   },
   downloadButton: {
     display: "none",
-    [theme.breakpoints.largeScreen]: {
-      display: "flex",
-    },
     listStyle: "none",
     margin: 0,
     padding: 0,
-    backgroundColor: theme.colors.primaryHighlightColor,
+    backgroundColor: theme.colors.primaryDark,
     "&:hover": {
-      backgroundColor: theme.colors.secondaryHighlightColor,
+      backgroundColor: theme.colors.secondary,
+    },
+    [theme.breakpoints.largeScreen]: {
+      display: "flex",
     },
   },
   downloadButtonLink: {
@@ -50,4 +50,4 @@ const navbarStyle = theme => ({
   },
 })
 
-export { navbarStyle };
+export { navbarStyles };
