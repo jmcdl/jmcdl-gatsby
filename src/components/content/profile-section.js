@@ -16,7 +16,7 @@ function ProfileSection() {
         </p>
         <p>
           I value doing things the right way from the
-          start and believe that investing the effort up front always pay off in
+          start and believe that investing the effort up front always pays off in
           the long run. Attention to detail, constant growth and team work are
           my priorities.
         </p>

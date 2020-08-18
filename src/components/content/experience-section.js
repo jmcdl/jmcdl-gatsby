@@ -15,7 +15,7 @@ function ExperienceSection() {
         <SectionSubheader
           title="Developer / Manager"
           company="TailorSoft"
-          description="TailorSoft is a medium size software development company based in Colombia, working primarily with clients from the United States. Following are some of the projects I've worked on and related achievements."
+          description="TailorSoft is a medium size software development company based in Colombia, working primarily with clients from the United States. Following are some of the projects I have worked on and related achievements."
           location="Medellin (Colombia)"
           dateText="October 2018 - present (currently full-time remote)"
           link="https://www.tailorsoft.co/"
