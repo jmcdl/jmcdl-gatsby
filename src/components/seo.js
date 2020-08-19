@@ -2,19 +2,20 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import favicon from "../../static/favicon.ico"
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
-        query {
-            site {
-                siteMetadata {
-                    title
-                    description
-                    author
-                }
-            }
+      query {
+        site {
+          siteMetadata {
+            title
+            description
+            author
+          }
         }
+      }
     `
   )
 
@@ -61,7 +62,9 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <link rel="icon" href={favicon} />
+    </Helmet>
   )
 }
 
@@ -78,4 +81,4 @@ SEO.propTypes = {
   title: PropTypes.string.isRequired,
 }
 
-export default SEO;
+export default SEO
