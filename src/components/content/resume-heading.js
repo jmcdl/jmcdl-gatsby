@@ -35,6 +35,7 @@ function ResumeHeading(props) {
             james.mcdonell@outlook.com
           </a>
         </li>
+        <li>0437 44 00 75</li>
       </ul>
     </div>
   )
